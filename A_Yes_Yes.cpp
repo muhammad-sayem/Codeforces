@@ -42,8 +42,8 @@ int main()
                 }
             }
 
-            if(flag == 0) cout << yes << endl;
-            else cout << no << endl;
+            if(flag == 0) cout << "YES" << endl;
+            else cout << "NO" << endl;
         }
     }
 
