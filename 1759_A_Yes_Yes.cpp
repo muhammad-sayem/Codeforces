@@ -45,8 +45,6 @@ int main()
             if(flag == 0) cout << yes << endl;
             else cout << no << endl;
         }
-
-
     }
 
     return 0;
