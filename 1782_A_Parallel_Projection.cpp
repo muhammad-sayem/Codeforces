@@ -24,7 +24,6 @@ int main()
         ans += min( {g+b+abs(a-f), d-g+d-b+abs(a-f), w-f+w-a+abs(g-b), f+a+abs(g-b)} );
 
         cout << ans << endl;
-
     }
 
     return 0;
