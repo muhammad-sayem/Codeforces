@@ -13,10 +13,8 @@ int main()
     cin >> test;
 
     while(test--){
-        int w, d, h;
+        int w, d, h, a, b, f, g;
         cin >> w >> d >> h;
-
-        int a, b, f, g;
         cin >> a >> b >> f >> g;
 
         int ans = h;
