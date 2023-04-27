@@ -31,7 +31,7 @@ int main()
 
         for(i=1; i<=maxx; i++){
             if(cnt[i] == 0){
-                s-=i;
+                s -= i;
             }
         }
 
