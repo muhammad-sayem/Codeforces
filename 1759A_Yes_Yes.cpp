@@ -15,7 +15,7 @@ int main()
     while(test--){
         string str;
         cin >> str;
-        int i, flag = 0;
+        int i, flag=0;
 
         for(i=0; i<str.size(); i++){
             if(str[i] != 'Y' && str[i] != 'e' && str[i] != 's'){
