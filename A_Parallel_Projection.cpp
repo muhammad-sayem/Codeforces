@@ -13,14 +13,12 @@ int main()
     cin >> test;
 
     while(test--){
-        int w, d, h;
+        int w, d, h, a, b , f, g;
         cin >> w >> d >> h;
 
-        int a, b, f, g;
         cin >> a >> b >> f >> g;
 
         int ans = h;
-
         ans += min( {g+b+abs(a-f), d-g+d-b+abs(a-f), w-f+w-a+abs(g-b), f+a+abs(g-b)} );
 
         cout << ans << endl;
