@@ -18,7 +18,7 @@ int main()
         cin >> a[i].first >> a[i].second;
     }
 
-    sort(a, a+n);       
+    sort(a, a+n);       /// sorting pair ///
 
     for(i=0; i<n; i++){
         if(s<=a[i].first){
