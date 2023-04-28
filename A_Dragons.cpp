@@ -3,7 +3,7 @@
 #define    yes       "YES"
 #define    no        "NO"
 #define    ll        long long
-#define    pi        pair<int,int>
+#define    pii       pair <int,int>
 #define    fastIO    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 using namespace std;
 int main()
@@ -13,7 +13,7 @@ int main()
     int s, n, i, flag = 0;
     cin >> s >> n;
 
-    pair<int, int> a[1000];
+    pii a[1000];
 
     for(i=0; i<n; i++){
         cin >> a[i].first >> a[i].second;
