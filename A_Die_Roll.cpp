@@ -23,9 +23,6 @@ int main()
     return 0;
 }
 
-// ---------------------------------------------------------------------- //
-
-// Asif Abdullah's code //
 
 /*
 #include<bits/stdc++.h>
@@ -37,7 +34,7 @@ int main()
 using namespace std;
 int main()
 {
-    fio;
+    fio;                /// asif_abdullah ///
 
     int a,b;
     cin >> a >>b;
