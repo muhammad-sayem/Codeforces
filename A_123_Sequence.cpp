@@ -15,7 +15,6 @@ int main()
         else if(a[i] == 2) cnt2++;
         else if(a[i] == 3) cnt3++;
     }
-
     maxx = max({cnt1, cnt2, cnt3});
 
     cout << n-maxx << endl;
