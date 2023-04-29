@@ -13,6 +13,30 @@ int main()
 {
     fastIO;
 
+    string str;
+    cin >> str;
+    int n, cnt1 = 0, cnt2 = 0;
+    cin >> n;
+
+    while(n--){
+        string s;
+        cin >> s;
+
+        if(s[0] == str[0] && s[1] == str[1]) {
+            cnt1 = 1;
+            cnt2 = 1;
+        }
+
+        else{
+            if(s[0] == str[1]) cnt1++;
+            if(s[1] == str[0]) cnt2++;
+        }
+
+    }
+
+    if(cnt1 >= 1 && cnt2 >= 1) cout << yes << endl;
+    else cout << no << endl;
 
     return 0;
 }
+
