@@ -4,6 +4,7 @@
 #define      no              "NO"
 #define      ll              long long
 #define      pii             pair <int,int>
+#define      pll             pair<long long,long long>
 #define      pb              push_back
 #define      gcd(a,b)        __gcd(a,b)
 #define      lcm(a,b)        (a*b)/gcd(a,b)
