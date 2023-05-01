@@ -40,7 +40,7 @@ int main()
                 
             }
             reverse(str.begin(), str.end());
-            ///sort(str.begin(), str.end());        /// sort korleo hobe ///
+            ///sort(str.begin(), str.end());        // sort korleo hobe //
             cout << str << endl;
 
         }
