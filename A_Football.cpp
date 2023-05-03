@@ -39,3 +39,55 @@ int main()
     
     return 0;
 }
+
+
+/*
+#include<bits/stdc++.h>
+#define      endl            '\n'
+#define      yes             "YES"
+#define      no              "NO"
+#define      ll              long long
+#define      pii             pair <int,int>
+#define      pll             pair<long long,long long>
+#define      pb              push_back
+#define      gcd(a,b)        __gcd(a,b)
+#define      lcm(a,b)        (a*b)/gcd(a,b)
+#define      fastIO          ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+using namespace std;
+
+
+void solve(int num){
+    string str[200];
+    int cnt1 = 1, cnt2 = 0, i;
+
+    for(i=0; i<num; i++){
+        cin >> str[i];
+    }
+
+    string str2 = str[0];
+    string str3;
+
+    for(i=1; i<num; i++){
+        if(str[i] == str2) cnt1++;
+        else {
+            str3 = str[i];
+            cnt2++;
+        }
+    }
+
+    if(cnt1 > cnt2) cout << str2 << endl;
+    else cout << str3 << endl;
+}
+
+int main()
+{
+    fastIO;
+
+    int n, i;
+    cin >> n;
+
+    solve(n);
+    
+    return 0;
+}
+*/
