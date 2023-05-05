@@ -12,33 +12,40 @@
 using namespace std;
 int main()
 {
-    fastIO;
+    fastIO;             /// Abid vai + Coding Community | Newton School ///
 
     int test;
     cin >> test;
 
     while(test--){
-        int n, i, j, maxx, flag = 0;
+        int n, i, j;
         cin >> n;
-        int a[n+5];
+
+        int a[1005];
+        memset(a,0,sizeof(a));
+
+        int x;
 
         for(i=1; i<=n; i++){
-            cin >> a[i];
+            cin >> x;
+            a[x] = i;
         }
 
-        for(i=1; i<=n; i++){
-            for(j=i; j<=n; j++){
-                if( gcd(a[i], a[j]) == 1) {
-                    maxx = i+j;
-                    flag++;
+        int ans = -1;
+
+        for(i=1; i<=1000; i++){
+            for(j=i; j<=1000; j++){
+                if(a[i] != 0 && a[j] != 0){
+                    if(gcd(i,j) == 1){
+                        ans = max(ans, a[i]+a[j]);
+                    }
                 }
             }
         }
-        if(flag == 0) cout << -1 << endl;
-        else cout << maxx << endl;
+
+        cout << ans << endl;
 
     }
-
 
     return 0;
 }
