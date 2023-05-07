@@ -1,26 +1,21 @@
 #include<bits/stdc++.h>
+#define      endl            '\n'
+#define      yes             "YES"
+#define      no              "NO"
+#define      ll              long long
+#define      pii             pair <int,int>
+#define      pb              push_back
+#define      gcd(a,b)        __gcd(a,b)
+#define      lcm(a,b)        (a*b)/gcd(a,b)
+#define      fastIO          ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 using namespace std;
 int main()
 {
-    string str;
-    cin >> str;
-    int i;
+    fastIO;                 
 
-    for(i=0; i<str.size(); i++){
-        if(str[i] == 'W' && str[i+1] == 'U' && str[i+2] == 'B'){
-            if(i != 0)
-                cout << " ";
-            i+=2;
-            continue;
-        }
-        else cout << str[i];
-    }
-
-    cout << endl;
+    
 
     return 0;
 }
 
 
-/// RWUBWUBWUBL ///
-/// R L ///
