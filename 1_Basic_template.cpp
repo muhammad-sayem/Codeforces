@@ -3,6 +3,7 @@
 #define      yes             "YES"
 #define      no              "NO"
 #define      ll              long long
+#define      sz(s)           s.size()
 #define      pii             pair <int,int>
 #define      pb              push_back
 #define      gcd(a,b)        __gcd(a,b)
@@ -11,9 +12,8 @@
 using namespace std;
 int main()
 {
-    fastIO;                 
-
-    
+    fastIO; 
+                
 
     return 0;
 }
