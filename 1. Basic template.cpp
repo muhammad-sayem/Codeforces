@@ -6,9 +6,9 @@
 #define      pb              push_back
 #define      pii             pair <int,int>
 #define      pll             pair <long long,long long>
-#define      rev(a)          reverse(a, a+n);   
-#define      sort(a)         sort(a, a+n);   
-#define      Srev(s)         reverse(s.begin(), s.end());      
+#define      rev(a)          reverse(a, a+n);
+#define      sort(a)         sort(a, a+n);
+#define      Srev(s)         reverse(s.begin(), s.end());
 #define      sz(s)           s.size()
 #define      gcd(a,b)        __gcd(a,b)
 #define      lcm(a,b)        (a*b)/gcd(a,b)
@@ -16,10 +16,8 @@
 using namespace std;
 int main()
 {
-    fastIO; 
+    fastIO;
 
-            
+
     return 0;
 }
-
-
