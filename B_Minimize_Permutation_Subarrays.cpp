@@ -38,6 +38,7 @@ int main()
         else if(one_i<two_i && max_i<one_i) cout << max_i << " " << one_i << endl;
         else if(one_i<two_i && max_i>two_i) cout << max_i << " " << two_i << endl;
         else cout << one_i << " " << one_i << endl;
+
         
     }
 
