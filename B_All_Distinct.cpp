@@ -16,7 +16,7 @@
 using namespace std;
 int main()
 {
-    fastIO;                  // GUSSURI (Ikftekhar vai) //
+    fastIO;                  // GUSSURI (Iftekhar vai) //
  
     int test;
     cin >> test;
