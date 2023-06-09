@@ -16,8 +16,8 @@
 using namespace std;
 int main()
 {
-    fastIO; 
-
+    fastIO;                  // GUSSURI (Ikftekhar vai) //
+ 
     int test;
     cin >> test;
 
@@ -25,33 +25,21 @@ int main()
         int n, i, flag = 0;
         cin >> n;
 
+        set<int> s;
+
         for(i=0; i<n; i++){
-            cin >> a[i];
+            int num;
+            cin >> num;
+
+            s.insert(num);
         }
 
-        sort(a);
+        int ans = n-s.size();
 
-        for(i=0; i<n-1; i++){
-            if(a[i] == a[i+1]){
-                flag = 1;
-                break;
-            }
-        }
-
-        if(flag == 0) cout << n << endl;
-        else{
-            n -= 2;
-            
-        }
-
-
-
-
-
-
+        if(ans%2 == 0) cout << s.size() << endl;
+        else cout << s.size()-1 << endl;
     }
 
-            
     return 0;
 }
 
