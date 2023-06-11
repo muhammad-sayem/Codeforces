@@ -15,7 +15,7 @@
 using namespace std;
 int main()
 {
-    fastIO;
+    fastIO;                 // Logic from: code Explainer (Youtube Channel) //
 
     int test;
     cin >> test;
@@ -41,7 +41,6 @@ int main()
                 if( gcd(even[i], 2*even[j]) > 1 ) cnt++;
             }
         }
-
         cout << cnt << endl;
     }
 
