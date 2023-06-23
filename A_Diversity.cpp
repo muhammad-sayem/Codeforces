@@ -28,7 +28,7 @@ int main()
         cout << "impossible" << endl;
         return 0;
     }
-    
+
     set<char> s;
 
     for(i=0; i<size1; i++){
@@ -37,7 +37,7 @@ int main()
 
     int size2 = s.size();
 
-    if(k == size2 || k<size2) cout << 0 << endl;
+    if(k <= size2) cout << 0 << endl;
     else cout << k-size2 << endl;
 
     return 0;
