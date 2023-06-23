@@ -1,5 +1,3 @@
-    if(cnt > maxx){
-                maxx = max(cnt, maxx);
-                store = v[i];
-                cnt = 1;    
-            }
+for(auto it=s.begin(); it != s.end(); it++){
+            cout << *it << endl;
+        }
