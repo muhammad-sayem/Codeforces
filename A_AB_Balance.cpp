@@ -34,8 +34,8 @@ int main()
         if(ab == ba) cout << str << endl;
 
         else{
-            if(str[i] == 'a') str[i] = 'b';
-            else if(str[i] == 'b') str[i] = 'a';
+            if(str[0] == 'a') str[0] = 'b';
+            else if(str[0] == 'b') str[0] = 'a';
     
             cout << str << endl;
         }
