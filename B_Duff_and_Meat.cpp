@@ -33,13 +33,8 @@ int main()
     sum = a[0]*b[0];
 
     for(i=1; i<n; i++){
-        if(minn <= b[i]){
-            sum += minn*a[i];
-        }
-        else if(minn > b[i]){
-            minn = b[i];
-            sum += minn*a[i];
-        }
+        minn = min(minn, b[i]);
+        sum += minn*a[i];
     }
 
     cout << sum << endl;
