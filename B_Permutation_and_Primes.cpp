@@ -31,9 +31,9 @@ int main()
         else{
             int mid = (n/2)+1;
 
-            a[1] = 2;
+            a[1] = 3;
             a[mid] = 1;
-            a[n] = 3;
+            a[n] = 2;
 
             for(i=2; i<mid; i++){
                 a[i] = i+2;
