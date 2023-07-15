@@ -31,7 +31,9 @@ bool answer(int n, int m){
     if(left == true || right == true) {
         return true;
     }
-    else return false;
+    else {
+        return false;
+    }
 
 }
 
