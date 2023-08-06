@@ -111,9 +111,8 @@ int main()
 
         int mx = INT_MIN;
 
-        for (int i = 0; i < n - 1; i++)
-        {
-            if (a[i] > a[i + 1])        {
+        for (int i = 0; i < n - 1; i++){
+            if (a[i] > a[i + 1]){
                 mx = max(a[i], mx);
                 f=1;
             }
