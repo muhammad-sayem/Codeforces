@@ -79,21 +79,6 @@ int main()
 #define      fastIO          ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 using namespace std;
 
-long long sv[10000010];
-
-void sieve(){
-    long long i, j;
-    memset(sv,0,sizeof(sv));
- 
-    for(i=2; i<10000010; i++){
-        if(sv[i] == 0){
-            for(j=i+i; j<10000010; j+=i){
-            sv[j] = 1;
-            }
-        }
-    }
-}
-
 int main()
 {   
     fastIO;   
