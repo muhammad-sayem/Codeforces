@@ -48,7 +48,7 @@ int main()
     dsu_set(n);
     int e = n-1;
     int cycleCnt = 0;
-    vector<pair<int, int>> vv;
+    vector<pair<int, int>> remove;
 
     while(e--){
         int a, b;
@@ -57,7 +57,7 @@ int main()
         int leaderB = findLeader(b);
         if(leaderA == leaderB){
             cycleCnt++;
-            vv.pb({a,b});
+            remove.pb({a,b});
         }
         else{
             dsu_union(a, b);
@@ -73,7 +73,7 @@ int main()
     }
 
     vector<int> vec;
-    vector<pair<int, int>> vvv;
+    vector<pair<int, int>> connect;
 
     if(s.size() == 1) cout << 0 << endl;
     else{
@@ -84,12 +84,12 @@ int main()
         }
 
         for(i=0; i<vec.size(); i++){
-            vvv.pb({vec[i], vec[i+1]});
+            connect.pb({vec[i], vec[i+1]});
         }
 
         for(i=0; i<vec.size()-1; i++){
-            cout << vv[i].first << " " << vv[i].second << " ";
-            cout << vvv[i].first << " " << vvv[i].second << endl;
+            cout << remove[i].first << " " << remove[i].second << " ";
+            cout << connect[i].first << " " << connect[i].second << endl;
         }
     }
 
