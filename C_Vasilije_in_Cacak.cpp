@@ -13,6 +13,53 @@
 #define      lcm(a,b)        (a*b)/gcd(a,b)
 #define      fastIO          ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 using namespace std;
+
+ll sum(ll n){
+    return (n*(n+1))/2;
+}
+
+int main()
+{
+    fastIO;             // Code Idea: jahid_hridoy vai //
+
+    int test;
+    cin >> test;
+
+    while(test--){
+        ll n, k, x;
+        cin >> n >> k >> x;
+
+        ll sum_k = sum(k);          // k ta distinct numbers diye eitai minimum possible value //
+        ll res = sum(n) - sum(n-k);
+
+        if(x < sum_k) cout << no << endl;
+        else{
+            if(x <= res) cout << yes << endl;
+            else cout << no << endl; 
+        }
+    }
+
+    return 0;
+}
+
+// ------------------------------------------------------------------- //
+
+/*
+#include<bits/stdc++.h>
+#define      endl            '\n'
+#define      yes             "YES"
+#define      no              "NO"
+#define      ll              long long
+#define      pb              push_back
+#define      pii             pair <int,int>
+#define      pll             pair <long long,long long>
+#define      rev(a)          reverse(a, a+n);
+#define      Srev(s)         reverse(s.begin(), s.end());
+#define      sz(s)           s.size()
+#define      gcd(a,b)        __gcd(a,b)
+#define      lcm(a,b)        (a*b)/gcd(a,b)
+#define      fastIO          ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+using namespace std;
 int main()
 {
     fastIO;
@@ -40,3 +87,4 @@ int main()
 
     return 0;
 }
+*/
