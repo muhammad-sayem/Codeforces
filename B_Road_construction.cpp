@@ -110,7 +110,7 @@ int main()
     int val;
 
     for(i=1; i<=n; i++){
-        if(a[i] == 1){
+        if(a[i] == 0){
             val = i;
             break;
         }
