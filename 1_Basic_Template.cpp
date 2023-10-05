@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 #define      endl            '\n'
-#define      yes             "YES"
-#define      no              "NO"
+#define      yes             cout << "YES" << endl
+#define      no              cout << "NO" << endl
 #define      ll              long long
 #define      pb              push_back
 #define      pii             pair <int,int>
