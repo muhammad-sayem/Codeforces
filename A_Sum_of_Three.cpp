@@ -24,7 +24,7 @@ int main()
         int n;
         cin >> n;
 
-        if(n < 7 || n == 9) no;
+        if(n <= 6 || n == 9) no;
 
         else{
             if(n%3 != 0){
