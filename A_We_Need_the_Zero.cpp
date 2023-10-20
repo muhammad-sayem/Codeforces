@@ -2,7 +2,7 @@
 
 /*
     Approach by Rahat_Khan_Pathan vai: 
-    
+
     Jodi (n%2 != 0) hoy tahole full array er XOR e ans
     Jodi (n%2 == 0) hoy tahole jodi full at=rray er XOR zero hoy tahole ans 0 naile -1
 */
@@ -41,7 +41,7 @@ int main()
         int ans = 0;
 
         for(i=0; i<n; i++){
-                ans = ans^a[i];
+            ans = ans^a[i];
         }
 
         if(n%2 != 0){
