@@ -1,3 +1,12 @@
+// Multiple Answers Possible // 
+
+/*
+    Approach by Rahat_Khan_Pathan vai: 
+    
+    Jodi (n%2 != 0) hoy tahole full array er XOR e ans
+    Jodi (n%2 == 0) hoy tahole jodi full at=rray er XOR zero hoy tahole ans 0 naile -1
+*/
+
 #include<bits/stdc++.h>
 #define      endl            '\n'
 #define      yes             (cout << "YES\n")
@@ -21,46 +30,26 @@ int main()
     cin >> test;
 
     while(test--){
-        int n, i, j, k, ans, XOR;
+        int n, i;
         cin >> n;
         int a[n+5];
-        bool f = false;
 
         for(i=0; i<n; i++){
             cin >> a[i];
-            if(a[i] == 0) {
-                f = true;
-            }
         }
 
-        if(f) cout << a[n-1] << endl;
+        int ans = 0;
+
+        for(i=0; i<n; i++){
+                ans = ans^a[i];
+        }
+
+        if(n%2 != 0){
+            cout << ans << endl;
+        }
 
         else{
-            bool flag = false;
-
-            for(i=0; i<=255; i++){
-                vector<int> v;
-                for(j=0; j<n; j++){
-                    v.pb(a[j]^i);
-                }
-
-                XOR = 0;
-
-                for(k=0; k<v.size(); k++){
-                    XOR = XOR^v[k];
-                }
-
-                if(XOR == 0){
-                    ans = i;
-                    flag = true;
-                    break;
-                }
-                v.clear();
-            }
-
-            // cout << XOR << endl;
-
-            if(flag) cout << ans << endl;
+            if(ans == 0) cout << 0 << endl;
             else cout << -1 << endl;
         }
     }
