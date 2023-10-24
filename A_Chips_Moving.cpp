@@ -23,8 +23,8 @@ int main()
 
     for(i=1; i<=n; i++){
         cin >> a[i];
-        if(a[i]&1) odd++;
-        else even++;
+        if(a[i]%2 == 0) even++;
+        else odd++;
     }
     cout << min(even, odd) << endl;
 
