@@ -33,9 +33,9 @@ int main()
 
         for(i=1; i<n; i++){
             if(a[i] > a[i+1]){
-                int temp = i;
+                int index = i;
 
-                if((temp & (temp-1)) != 0){
+                if((index & (index-1)) != 0){
                     flag = false;
                     break;
                 }
