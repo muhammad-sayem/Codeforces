@@ -23,26 +23,23 @@ int main()
     cin >> test;
 
     while(test--){
-        int n, i;
-        cin >> n;
-        int a[n+5];
+        ll n, x, i;
+        cin >> n >> x;
+        ll a[n+5];
+        a[0] = 0;
 
-        for(i=0; i<n; i++){
+        for(i=1; i<=n; i++){
             cin >> a[i];
         }
 
-        int totalXor = 0;
+        ll maxx = -1e18;
 
-        for(i=0; i<n; i++){
-            totalXor ^= a[i];
+        for(i=n; i>=1; i--){
+            maxx = max(maxx, abs(a[i]-a[i-1]));
         }
+        maxx = max(maxx, ((x-a[n])*2));
 
-        int minn = totalXor;
-
-        for(i=0; i<n; i++){
-            minn = min(minn, totalXor ^ a[i]);
-        }
-        cout << minn << nl;
+        cout << maxx << nl;
     }
 
     return 0;
