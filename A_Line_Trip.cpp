@@ -38,7 +38,6 @@ int main()
             maxx = max(maxx, abs(a[i]-a[i-1]));
         }
         maxx = max(maxx, ((x-a[n])*2));
-
         cout << maxx << nl;
     }
 
