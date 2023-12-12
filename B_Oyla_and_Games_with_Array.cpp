@@ -23,39 +23,37 @@ int main()
     cin >> test;
 
     while(test--){
-        int x, i;
-        cin >> x;
+        ll t, i;
+        cin >> t;
 
-        vector<ll> v;
-        ll minn = 1e18;
+        vector<ll> v1;
+        vector<ll> v2;
 
-        while(x--){
+        while(t--){
             ll n;
             cin >> n;
             ll a[n+5];
-            
+
             for(i=0; i<n; i++){
                 cin >> a[i];
-                minn = min(a[i], minn);
             }
+
             sort(a, a+n);
-            v.pb(a[1]);
+
+            v1.pb(a[0]);
+            v2.pb(a[1]);
         }
 
-        ll secondMin = *min_element(v.begin(), v.end());
-        ll minCnt = 0;
-
-        for(i=0; i<v.size(); i++){
-            if(v[i] == secondMin) minCnt++;
-        }
+        sort(v1.begin(), v1.end());
+        sort(v2.begin(), v2.end());
 
         ll sum = 0;
 
-        for(i=0; i<v.size(); i++){
-            if(v[i] != secondMin) sum += v[i];
+        for(i=1; i<v2.size(); i++){
+            sum += v2[i];
         }
-        sum += (minCnt-1)*secondMin;
-        sum += minn;
+        sum += v1[0];
+
         cout << sum << nl;
     }
 
