@@ -43,7 +43,9 @@ int main()
                 cnt++;
             }
         }
-        
+
+        // cout << (cnt+1)/2 << nl;
+
         if(cnt%2 == 0) cout << (cnt/2) << nl;
         else cout << (cnt/2)+1 << nl;
     }
