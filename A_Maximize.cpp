@@ -26,8 +26,11 @@ int main()
         int x;
         cin >> x;
 
-        if(x%2 == 0) cout << x/2 << nl;
-        else cout << x-1 << nl;
+        cout << x-1 << nl;
+
+        // if(x%2 == 0) cout << x/2 << nl;
+        // else cout << x-1 << nl;
     }
+    
     return 0;
 }
